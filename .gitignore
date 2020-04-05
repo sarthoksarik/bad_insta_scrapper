@@ -3,3 +3,4 @@ venv/
 __pycache__/
 geckodriver.log
 idnpass.py
+image_folder/

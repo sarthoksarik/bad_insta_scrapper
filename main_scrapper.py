@@ -12,10 +12,11 @@ logging.basicConfig(level=logging.INFO,
 logging.disable(logging.CRITICAL)
 
 login_id = idnpass.my_id
-login_pass = idnpass.mypass
+login_pass = idnpass.my_pass
 
 scrapping_profile_id = "mukit.h"
-folder_name = scrapping_profile_id
+folder_name = os.path.join("image_folder", scrapping_profile_id)
+
 os.makedirs(folder_name, exist_ok=True)
 browser = webdriver.Firefox()
 
